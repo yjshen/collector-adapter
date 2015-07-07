@@ -1,0 +1,27 @@
+Collecor中结合到项目中的有
+common.h
+conf.h conf.c
+receiver.h receiver.c
+utils.h tuils.c
+hash.h hash.c   (该hash由他们提供，咱们只是调用hash中的update方法)
+
+-----------------------------------------
+
+做测试的有 
+load.h load.c
+test.c (包含main函数)
+
+-----------------------------------------
+
+选要的有
+log.h log.c
+
+
+common文件中定义了
+#define TEST
+#define LOG
+其中
+TEST则会加载load.h并从testData文件夹中加载我们需要的测试数据，做测试用
+LOG则会使用log功能，和java中的log类似，将需要打印的地方打印出来。
+该功能有一个bug
+
